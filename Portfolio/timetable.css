@@ -1,0 +1,92 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#header{
+    position: relative;
+}
+#header::before{
+    background-color: crimson;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 83px;
+    z-index: -1;
+    content: "";
+}
+
+#nav_bar ul{
+    display: flex;
+    align-items: center;
+}
+
+#nav_bar ul li{
+    font-size: 1.35rem;
+    list-style: none;
+    margin-top: 28px;
+    margin-left: 88px;
+
+}
+
+#nav_bar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 9px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav_bar ul li a:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.container{
+    margin-top: 79px;
+    margin-left: 67px;
+    margin-right: 67px;
+    height: 620px;
+    width: 94%;
+}
+
+
+table th, td{
+    border: 2px solid red;
+    padding: 25px 45px;
+    text-align: center;
+    
+}
+
+.table{
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #aeef00;
+    color: black;
+}
+
+#dept{
+    background-color: #ff4082;
+}
+
+footer{
+    background-color: rgb(21 22 22);
+    height: 50px;
+}
+
+#left{
+    color: gray;
+    display: inline-block;
+    margin: 17px 251px;
+    font-size: 14px;
+    padding: 0px 24px;
+}

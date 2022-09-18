@@ -1,0 +1,170 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#nav_bar{
+    background-color: crimson;
+    height: 72px;
+    position: sticky;
+    top: 0;
+}
+
+#nav_bar ul{
+    display: flex;
+    align-items: center;
+    margin: 0px 71px;
+}
+
+#nav_bar ul li{
+    list-style: none;
+    font-size: 20px;
+    margin: 24px 4px;
+}
+
+#nav_bar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 38px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#nav_bar ul li a:hover{
+    color: black;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 659px;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 2px solid green; */
+    height: 325px;
+
+}
+
+.video iframe{
+    height: 257px;
+    width: 398px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 51px;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    top: 66px;
+    bottom: 0px;
+    width: 180px;
+    left: 50%;
+    height: 3px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.title::after{
+    content: "What I Watch";
+    position: absolute;
+    bottom: -37px;
+    left: 50%;
+    color: #e10980;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+footer{
+    background-color: rgb(21 22 22);
+    height: 50px;
+}
+
+#left{
+    color: gray;
+    display: inline-block;
+    margin: 17px 251px;
+    font-size: 14px;
+    padding: 0px 24px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1192px){
+ 
+    .video iframe{
+        height: 247px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+ 
+    .video iframe{
+        height: 227px;
+        width: 240px;
+    }
+
+    #nav_bar ul li a{
+        padding: 20px 8px;
+    }
+
+    #nav_bar ul li{
+        margin: 24px 4px;
+    }
+}
+
+@media screen and (max-width: 767px){
+ 
+    .video iframe{
+        height: 127px;
+        width: 140px;
+    }
+
+    #nav_bar ul li a{
+        padding: 20px 8px;
+    }
+
+    #nav_bar ul li{
+        margin: 24px 4px;
+    }
+
+    #home{
+        width: 150%;
+    }
+
+    #nav_bar{
+        width: 150%;
+    }
+
+    footer{
+        width: 150%;
+    }
+
+    #left{
+        margin: 17px 160px;
+        font-size: 13px;
+    }
+}
